@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #00A97F;
+  --light: rgba(133, 198, 218, 255);
+  --dark: rgba(13, 13, 10, 255);
+  --darker: rgba(234, 157, 90, 255);
+  --lighter: #cbd6cf;
+  --lighter1: #c3dacc86;
+  --lighter2: #e4f0e9da;
+  --darken: #cca27e;
+  --color: orangered;
+  --search: #FF6000;
+  --primary1: #2b3d4c;
+  --primary2: #354d61;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--search);
+  margin: 10px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 10px;
+}
+
+span {
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+  transition: 0.5s ease;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+
+p {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin: auto;
+  color: var(--primary1);
+}
+
+button {
+  padding: 12px 10px;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--lighter);
+}
+
+.active {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.inactive {
+  color: var(--primary1);
+  font-weight: 400;
+}
+
+.logo {
+  max-width: 100%;
+  height: 40px;
+}
+
+/* ---------my css------ */
+/* header */
+.header-top-strip a {
+  color: var(--primary1);
+}
+
+.header-upper {
+  background: var(--lighter2);
+}
+
+.nav-links a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: var(--search);
+}
+
+/* footer */
+footer {
+  background-color: var(--lighter2);
+}
+
+footer a {
+  color: var(--primary1);
+}
+
+/* home */
+.banner {
+  background: url(/src/assets/images/back.jpg);
+  height: 50vh;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.banner-details h1 {
+  font-size: 52px;
+}
+
+.banner-details h2 {
+  font-size: 32px;
+}
+
+.banner-details p {
+  color: var(--primary1);
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-details {
+    height: auto;
+    background-position: center;
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner-details h1 {
+    font-size: 36px;
+  }
+
+  .banner-details h2 {
+    font-size: 24px;
+  }
+}
+
+.hero-details img {
+  width: 100%;
+  height: 70px;
+}
+
+/* featured */
+.featured-products .card span {
+  color: var(--darken);
+}
+
+.featured-products button {
+  align-items: center;
+  transition: 0.5s ease;
+  background: var(--primary2);
+  color: white;
+}
+
+.featured-products button:hover {
+  background: transparent;
+  color: var(--primary1);
+}
+
+.featured-products .card {
+  border-radius: 20px;
+  transition: 0.5s ease;
+  max-width: 250px;
+  padding: 12px 10px;
+  overflow: hidden;
+}
+
+.featured-products .card img {
+  border-radius: 20px;
+  max-width: 100%;
+  max-height: 220px;
+}
+
+.featured-products .action-bar {
+  top: 30%;
+  right: -100px;
+  transition: 0.8s ease;
+}
+
+.featured-products .card:hover .action-bar {
+  right: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .featured-products .action-bar {
+    display: none;
+  }
+
+  .new-arrivals .action-bar {
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .logo {
+    max-width: 100%;
+    height: 30px;
+  }
+}
+
+.featured-products .card:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.featured-products .card h5:hover {
+  color: var(--primary1);
+}
+
+.featured-products .card-text {
+  color: var(--darken);
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.featured-products .h5 {
+  font-weight: 500;
+  color: var(--primary1);
+  font-size: 18px;
+}
+
+.featured-products .price strike {
+  color: var(--darker);
+}
+
+.featured-products .red {
+  color: var(--primary);
+}
+
+/* new arrival */
+.new-products .card span {
+  color: var(--darken);
+}
+
+.new-products .card img {
+  border-radius: 20px;
+  width: 100%;
+  max-height: 220px;
+}
+
+/* blog */
+.blogs .card img {
+  width: 20rem;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.blogs button {
+  font-size: 16px;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+
+.blogs button:hover {
+  background: transparent;
+  color: var(--search);
+  border: 1px solid var(--darker);
+}
+
+/* shop starts here */
+.shop-banner {
+  background: url(/src/assets/images/b2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+}
+
+.price {
+  color: var(--primary);
+}
+
+.view-button {
+  transition: 0.5 ease;
+}
+
+.view-button:hover {
+  color: var(--search);
+}
+
+.add-btn {
+  border-radius: 10px;
+  background: var(--primary1);
+  border: none;
+  padding: 12px 10px;
+  color: white;
+}
+
+.shop-products .card img {
+  border-radius: 20px;
+  width: 100%;
+  max-height: 220px;
+
+}
+
+.shop-products .card {
+  border-radius: 20px;
+  max-width: 250px;
+}
+
+.shop-products .card span {
+  color: var(--darken);
+}
+
+.pagination .page-item {
+  padding: 0 8px;
+}
+
+.pagination .page-item .page-link {
+  font-size: 18px;
+  padding: 0 8px;
+  color: var(--darken);
+  transition: 0.5s ease;
+}
+
+.pagination .page-item .page-link:hover {
+  color: var(--search);
+}
+
+.red {
+  color: var(--primary);
+}
+
+/* cart */
+input {
+  padding: 12px;
+  width: 50px;
+  color: #FF6000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cart-item img {
+  max-width: 100%;
+  height: 120px;
+  border-radius: 20px;
+}
+
+thead {
+  font-size: 16px;
+}
+
+.cart-item {
+  background-color: var(--lighter2);
+}
+
+tbody {
+  background-color: #fff;
+}
+
+.cart-item button {
+  background: transparent;
+  padding: 10px;
+  border: 1px solid;
+  color: black;
+  font-size: 14px;
+}
+
+.input-group button {
+  border: 1px solid var(--lighter);
+}
+
+/* product details */
+.details button {
+  background: transparent;
+  padding: 12px;
+  border: 1px solid;
+  color: black;
+  font-size: 14px;
+}
+
+.details input {
+  width: 100px;
+  align-items: center;
+}
+
+.blog-wrapper {
+  background: url('/src/assets/images/b2.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+}
+
+.about-wrapper {
+  background: url('../src/assets/images/banner-3.png');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+}
+
+/* know */
+.know-us img {
+  border-radius: 30px;
+}
+
+.download video {
+  max-width: 100%;
+  min-height: 100vh;
+  border-radius: 30px;
+}
+
+.blogs img {
+  width: 15rem;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.blogs {
+  background-color: var(--lighter2);
+}
+
+.marquee img {
+  width: 8rem;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.marquee .card {
+  border: none;
+}
+
+.contact-wrapper {
+  background: url('../src/assets/images/banner-3.png');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+}
+
+.contact-info {
+  background: var(--lighter);
+}
+
+.contact-info map {
+  width: 100%;
+
+}
+
+.form .card {
+  background: var(--lighter);
+  border: none;
+}
+
+label {
+  font-size: 18px;
+}
+
+.form button {
+  padding: 12px 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: white;
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.form button:hover {
+  background: transparent;
+  color: white;
+  border: 1px solid var(--primary);
+}
+
+.button-link {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 12px 10px;
+  background-color: var(--primary1);
+  color: white;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.button-link:hover {
+  background-color: transparent;
+  border: 1px solid var(--primary1);
+  color: var(--primary1);
+}
+
+#button-linker {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: var(--primary1);
+  color: white;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+#button-linker:hover {
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  color: white;
+}
+/*   */
+
+.new-arrivals button {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  font-size: 18px;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  transition: 0.5s ease;
+  line-height: 0px;
+}
+
+.new-arrivals button:hover {
+  background-color: var(--light);
+}
+
+.new-arrivals .card {
+  border-radius: 20px;
+  transition: 0.5s ease;
+  max-width: 250px;
+  padding: 12px 10px;
+}
+
+.new-arrivals .card img {
+  border-radius: 20px;
+}
+
+.new-arrivals .card:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hot-deals .card {
+  padding: 12px 10px;
+}
+
+.hot-deals .card img {
+  min-height: 180px;
+  justify-content: center;
+}
+
+.hot-deals button {
+  color: white;
+  background-color: var(--darker);
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+
+.hot-deals button:hover {
+  background: transparent;
+  color: var(--search);
+  border: 1px solid var(--darker);
+}
+
+
+
+.news-letter {
+  background-color: var(--lighter1);
+}
+
+#basic-addon2 {
+  background-color: transparent;
+  text-align: center;
+  line-height: 0;
+  transition: 0.5s ease;
+  font-size: 16px;
+}
+
+#basic-addon2:hover {
+  color: var(--search);
+}
+
+#news-input {
+  height: 3rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+footer .pay img {
+  padding: 10px 8px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  transition: 0.5s ease;
+}
+
+footer .pay img:hover {
+  transform: translateY(-10px);
+}
+
+footer .socials {
+  margin: 0 10px;
+}
+
+#footer-link {
+  font-size: 18px;
+  margin: 0 10px;
+  color: var(--darken);
+  transition: 0.5s ease;
+}
+
+#footer-link:hover {
+  color: var(--search);
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#footer-links {
+  font-size: 16px;
+  color: var(--primary1);
+  transition: 0.5s ease;
+}
+
+#footer-links:hover {
+  color: var(--search);
+}
+
+footer .footer-title {
+  border-bottom: 2px solid var(--darken);
+  width: 30%;
+}
+
+footer .footer-tel {
+  color: var(--darken);
+  transition: 0.5s ease;
+}
+
+footer .footer-tel:hover {
+  color: var(--primary1);
+}
+
+
+
+
+
+
+ 
